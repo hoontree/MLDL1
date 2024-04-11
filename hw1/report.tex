@@ -163,9 +163,9 @@ Then, taking a derivative with respect to $\alpha, \beta$, I computed the gradie
     {\partial l(\alpha, \beta)\over \partial \alpha} &= N (\psi(\alpha) - \psi(\alpha + \beta)) - \sum_i \ln x_i \\
     {\partial l(\alpha, \beta)\over \partial \beta} &= N (\psi(\beta) - \psi(\alpha + \beta)) - \sum_i \ln (1-x_i)
 \end{align}
-Since $\sum_i x  = N\bar{x}$, I use \textbf{np.mean()} function to calculate the last term of each gradient.
+Since $\sum_i x  = N\bar{x}$, I use \textbf{np.mean()} function to calculate the last term of each gradient. Please note that in the implementation, I drop the factor of $N$ since I considered the average of the gradient.
 Using the gradient descent algorithm(I attached it in the appedix as well as submitted the .ipynb file), I attained the following figure. 
-
+\clearpage
 \begin{figure}[!h]
     \begin{center}
         \includegraphics[scale = 0.5]{"fig/fig1.png"}
@@ -173,7 +173,7 @@ Using the gradient descent algorithm(I attached it in the appedix as well as sub
     \caption{The convergence of each parameter. They are success to converge to their true values.}
     \label{fig1}
 \end{figure}
-As figure \ref{fig1} says, $\alpha, \beta$ converges to true value, 3 and 5, respectively.
+As figure \ref{fig1} says, $\alpha, \beta$ converges to vicinity of their true value, 3 and 5, respectively.
 Furthermore, I conducted the experiment that repeats this algorithm 100 times. From this experiment, I observed the distribution of estimate of each parameter.
 
 \begin{figure}[!h]
@@ -191,8 +191,8 @@ The core statistics are listed at follows.
         \begin{tabular}{lll}
             & $\alpha$ & $\beta$ \\
             \hline \hline
-        mean               & 3.031                 & 5.064                \\
-        standard deviation & 0.187                 & 0.312               
+        mean               & 2.808                 & 4.654                \\
+        standard deviation & 0.139                 & 0.205               
         \end{tabular}
         \caption{The table of the basic statistics calculated from the distribution of each parameters}
     \end{center}
@@ -204,7 +204,7 @@ Note that I made the input $X$ as a matrix(not a sparse matrix as the skeleton c
 One would be able to find that I reduce at least one summation, which corresponsds to a single for-loop, by using matrix multiplication in \textbf{fit(), predict()} function.
 The test accuracy of my algorithm was about 0.98, which is pretty high. This implies that the Naive Bayes Classifier is efficient classifier that can classify the input data despite its absurd assumption.
 
-
+Here, I'll discuss about problem 4-(d).
 In this problem, we are looking for the probability of the word 'ossec' given that the security level is 2. The variable `model.probs` in my impelementation is a matrix that stores the estimated probabilities of each word given each class (or security level). 
 We first need to find the index of the word 'ossec' in our vocabulary. Then, we can find the corresponding probability from `model.probs`,which is 1.148e-05
 The reason why the estimated probability of 'ossec' given level 2 is non-zero (despite the word 'ossec' not appearing in level 2 logs) is because of the smoothing factor alpha. 
