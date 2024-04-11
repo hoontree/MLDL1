@@ -163,7 +163,11 @@ Then, taking a derivative with respect to $\alpha, \beta$, I computed the gradie
     {\partial l(\alpha, \beta)\over \partial \alpha} &= N (\psi(\alpha) - \psi(\alpha + \beta)) - \sum_i \ln x_i \\
     {\partial l(\alpha, \beta)\over \partial \beta} &= N (\psi(\beta) - \psi(\alpha + \beta)) - \sum_i \ln (1-x_i)
 \end{align}
-Since $\sum_i x  = N\bar{x}$, I use \textbf{np.mean()} function to calculate the last term of each gradient. Please note that in the implementation, I drop the factor of $N$ since I considered the average of the gradient.
+Since $\sum_i x  = N\bar{x}$, I use \textbf{np.mean()} function to calculate the last term of each gradient. 
+Please note that in the implementation, I drop the factor of $N$ since I considered the average of the gradient.
+Also, the specification requires to set $\alpha = 3, \beta = 5$. 
+However, in the given skeleton code, $\alpha,\beta$ are set to 2 and 3 respectively. 
+I followed the skeleton code.
 Using the gradient descent algorithm(I attached it in the appedix as well as submitted the .ipynb file), I attained the following figure. 
 \clearpage
 \begin{figure}[!h]
@@ -173,7 +177,7 @@ Using the gradient descent algorithm(I attached it in the appedix as well as sub
     \caption{The convergence of each parameter. They are success to converge to their true values.}
     \label{fig1}
 \end{figure}
-As figure \ref{fig1} says, $\alpha, \beta$ converges to vicinity of their true value, 3 and 5, respectively.
+As figure \ref{fig1} says, $\alpha, \beta$ converges to their true value, 2 and 3, respectively. 
 Furthermore, I conducted the experiment that repeats this algorithm 100 times. From this experiment, I observed the distribution of estimate of each parameter.
 
 \begin{figure}[!h]
@@ -191,8 +195,8 @@ The core statistics are listed at follows.
         \begin{tabular}{lll}
             & $\alpha$ & $\beta$ \\
             \hline \hline
-        mean               & 2.808                 & 4.654                \\
-        standard deviation & 0.139                 & 0.205               
+        mean               & 2.002                 & 3.005             \\
+        standard deviation & 0.1213                 & 0.1889               
         \end{tabular}
         \caption{The table of the basic statistics calculated from the distribution of each parameters}
     \end{center}

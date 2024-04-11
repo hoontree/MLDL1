@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1712799416 "c:/Users/JM/Desktop/SNU/Spring2024/MLDL1/MLDL1/hw1/report.tex" "report.pdf" "report" 1712799417 0
-  "c:/Users/JM/Desktop/SNU/Spring2024/MLDL1/MLDL1/hw1/report.tex" 1712799285 17800 56a1237c9e4f9ccc86320705254be3d7 ""
+["pdflatex"] 1712804679 "c:/Users/JM/Desktop/SNU/Spring2024/MLDL1/MLDL1/hw1/report.tex" "report.pdf" "report" 1712804681 0
+  "c:/Users/JM/Desktop/SNU/Spring2024/MLDL1/MLDL1/hw1/report.tex" 1712804679 17975 76d5bf39b3eb9b53b8f1d1df4072972b ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1696842087 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1696840752 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1696840752 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -251,11 +251,11 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1696845998 4802247 ab4785a6b25c2d7ae99cca07ea167ec7 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1696846068 8183298 4cd44f366710def3bf51654aac1460f6 ""
   "c:/texlive/2023/texmf.cnf" 1696845979 713 e69b156964470283e0530f5060668171 ""
-  "fig/fig1.png" 1712798726 35350 a3f9fc648509f64b98aa27d0cb0580b4 ""
-  "fig/fig2.png" 1712799415 23636 6905b99d8cb0bbeb4bb0d02f6062aebe ""
-  "report.aux" 1712799417 1679 7ff9b9961cd89e46036d198e2df81a86 "pdflatex"
-  "report.out" 1712799417 366 89c2765d73cb075a90e5dfb234a0a0b4 "pdflatex"
-  "report.tex" 1712799285 17800 56a1237c9e4f9ccc86320705254be3d7 ""
+  "fig/fig1.png" 1712804623 29432 8499baac76eafe40198199ef349facb7 ""
+  "fig/fig2.png" 1712804616 25581 08bd7570d69fc0526445785b4c46271b ""
+  "report.aux" 1712804681 1679 7ff9b9961cd89e46036d198e2df81a86 "pdflatex"
+  "report.out" 1712804681 366 89c2765d73cb075a90e5dfb234a0a0b4 "pdflatex"
+  "report.tex" 1712804679 17975 76d5bf39b3eb9b53b8f1d1df4072972b ""
   (generated)
   "report.aux"
   "report.log"
