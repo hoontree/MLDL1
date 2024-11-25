@@ -5,8 +5,7 @@
 /hw4/logs
 /Lab
 *.csv
-<<<<<<< HEAD
 .DS_Store
-=======
-.DS_Store.DS_Store
->>>>>>> 4c21afb242ac160436d47c584e1f686488975060
+/venv_mldl
+/hw3/data
+/hw3/CIFAR_10
